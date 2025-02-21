@@ -6,7 +6,7 @@ import { routes } from '@/data';
 
 const Header = () => {
   return (
-    <header className='absolute top-0 w-screen px-side h-24 sm:h-32 lg:h-40 flex justify-between items-center '>
+    <header className='container-custom sticky top-0 h-24 sm:h-32 lg:h-40 flex justify-between items-center'>
       <div className='relative z-50'>
         <Link href='/'>
           <Logo className='h-auto w-24 sm:w-36 lg:w-44' />

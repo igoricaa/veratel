@@ -20,7 +20,7 @@ export default function CTASection() {
           </CardHeader>
           <ContactForm className='px-side py-6 md:p-6' />
         </Card>
-        <div className='max-w-sm h-fit bg-primary rounded-lg px-4 py-6 md:p-6 text-white'>
+        <div className='md:max-w-sm h-fit bg-primary rounded-lg px-side py-6 md:p-6 text-white'>
           <h3 className='text-2xl font-bold mb-6'>Contact Information</h3>
           <div className='space-y-4'>
             <a

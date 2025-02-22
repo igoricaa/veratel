@@ -39,12 +39,9 @@ const MobileMenu = ({ className }: { className: string }) => {
               key={route.name}
               className={cn(
                 `${
-                  menuOpen ? 'opacity-100' : 'opacity-0'
-                } transition-opacity duration-300`
+                  menuOpen ? 'opacity-100 delay-300' : 'opacity-0'
+                } transition-opacity duration-300 `
               )}
-              style={{
-                transitionDelay: `${menuOpen && index * 0.1 + 0.1}s`,
-              }}
             >
               <Link
                 href={route.path}
@@ -57,7 +54,13 @@ const MobileMenu = ({ className }: { className: string }) => {
           ))}
           <Link
             href='/contact'
-            className={cn(buttonVariants({ size: 'lg' }), 'mt-4 sm:w-fit')}
+            className={cn(
+              buttonVariants({ size: 'lg' }),
+              'mt-4 sm:w-fit',
+              `${
+                menuOpen ? 'opacity-100 delay-300' : 'opacity-0'
+              } transition-opacity duration-300 `
+            )}
           >
             Contact Us
           </Link>

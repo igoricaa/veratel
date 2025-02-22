@@ -46,7 +46,7 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section id='features' className='container py-14 md:py-24 mt-16 md:mt-0'>
+    <section id='features' className='container py-14 md:py-24 mt-10 md:mt-0'>
       <div className='md:text-center mb-10 md:mb-16'>
         <h2 className='font-bold tracking-tighter text-3xl sm:text-4xl md:text-5xl'>
           What We Offer
@@ -65,13 +65,13 @@ export default function FeaturesSection() {
               // i === 3 && 'col-start-2'
             )}
           >
-            <CardHeader>
+            <CardHeader className='px-side sm:px-6'>
               <div className='p-2 w-fit rounded-lg bg-[hsla(163,100%,41%,1)] text-white mb-4'>
                 {feature.icon}
               </div>
               <CardTitle>{feature.title}</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className='px-side sm:px-6'>
               <CardDescription>{feature.description}</CardDescription>
             </CardContent>
           </Card>

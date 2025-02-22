@@ -28,8 +28,8 @@ export default function HowItWorks() {
       <div className="grid md:grid-cols-3 gap-8">
         {steps.map((step, i) => (
           <Card key={i} className="relative border-1 hover:border-[hsla(163,100%,41%,1)] transition-colors">
-            <CardContent className="pt-6">
-              <div className="absolute -top-4 left-6 p-2 rounded-lg bg-[hsla(163,100%,41%,1)] text-white">
+            <CardContent className="pt-6 px-side sm:px-6">
+              <div className="absolute -top-4 left-side sm:left-6 p-2 rounded-lg bg-[hsla(163,100%,41%,1)] text-white">
                 {step.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2 mt-4">{step.title}</h3>

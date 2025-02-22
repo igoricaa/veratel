@@ -61,7 +61,7 @@ export default function IndustrySection() {
           </div>
           <div className='mt-8'>
             <Card className='border-1'>
-              <CardHeader>
+              <CardHeader className='px-side sm:px-6'>
                 <CardTitle className='text-lg leading-relaxed text-muted-foreground'>
                   The iGaming and online casino industry demands precision and
                   reliability when it comes to marketing communications. We know
@@ -69,7 +69,7 @@ export default function IndustrySection() {
                   your campaigns.
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className='px-side sm:px-6'>
                 <Accordion type='single' collapsible className='mt-4' defaultValue={benefits[0].title}>
                   {benefits.map((benefit) => (
                     <AccordionItem key={benefit.title} value={benefit.title}>

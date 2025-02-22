@@ -47,13 +47,13 @@ export default function UseCasesSection() {
               key={i}
               className='border-1 hover:border-[hsla(163,100%,41%,1)] transition-colors'
             >
-              <CardHeader>
+              <CardHeader className='px-side sm:px-6'>
                 <div className='p-2 w-fit rounded-lg bg-[hsla(163,100%,41%,1)] text-white mb-4'>
                   {useCase.icon}
                 </div>
                 <CardTitle>{useCase.title}</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className='px-side sm:px-6'>
                 <CardDescription>{useCase.description}</CardDescription>
               </CardContent>
             </Card>

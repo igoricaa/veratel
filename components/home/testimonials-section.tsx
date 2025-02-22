@@ -19,7 +19,7 @@ export default function TestimonialsSection() {
         <div className='grid md:grid-cols-3 gap-8'>
           {testimonials.map((testimonial: Testimonial, i: number) => (
             <Card key={i} className='border-1'>
-              <CardContent className='pt-6'>
+              <CardContent className='pt-6 px-side sm:px-6'>
                 <div className='flex gap-1 mb-4'>
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <StarIcon

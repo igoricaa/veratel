@@ -3,8 +3,10 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import Burger from './burger';
-import { email, routes } from '@/data';
+import { routes } from '@/data';
 import { Route } from '@/types';
+import { cn } from '@/lib/utils';
+import { buttonVariants } from '../ui/button';
 
 const MobileMenu = ({ className }: { className: string }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +17,6 @@ const MobileMenu = ({ className }: { className: string }) => {
   };
 
   const toggleScroll = () => {
-    // document.body.style.overflow = menuOpen ? 'auto' : 'hidden';
     document.body.toggleAttribute('data-lenis-prevent', !menuOpen);
   };
 
@@ -26,42 +27,41 @@ const MobileMenu = ({ className }: { className: string }) => {
       </div>
 
       <div
-        className={`fixed inset-0 h-svh w-screen z-40 px-side pt-28 sm:pt-48 pb-8 sm:pb-16 bg-background flex flex-col justify-between gap-8 transition-all duration-300 ${
-          menuOpen ? 'visible translate-x-0' : 'invisible translate-x-full'
+        className={`fixed top-0 left-0 w-screen z-40 px-side pt-24 sm:pt-32 pb-6 sm:pb-8 bg-white flex flex-col justify-between gap-8 transition-all duration-300 shadow-lg ${
+          menuOpen
+            ? 'opacity-100 translate-y-0'
+            : 'opacity-0 -translate-y-[calc(100%-4rem)]'
         }`}
       >
         <ul className='flex flex-col gap-4 sm:gap-6'>
-          {routes.map((route: Route) => (
-            <li key={route.name}>
+          {routes.map((route: Route, index: number) => (
+            <li
+              key={route.name}
+              className={cn(
+                `${
+                  menuOpen ? 'opacity-100' : 'opacity-0'
+                } transition-opacity duration-300`
+              )}
+              style={{
+                transitionDelay: `${menuOpen && index * 0.1 + 0.1}s`,
+              }}
+            >
               <Link
                 href={route.path}
-                className='uppercase text-3xl sm:text-4xl'
+                className='text-2xl sm:text-3xl'
                 onClick={toggleMenu}
               >
                 {route.name}
               </Link>
             </li>
           ))}
+          <Link
+            href='/contact'
+            className={cn(buttonVariants({ size: 'lg' }), 'mt-4 sm:w-fit')}
+          >
+            Contact Us
+          </Link>
         </ul>
-
-        <div className='flex flex-col gap-5 sm:gap-8'>
-          <div>
-            <p className='text-3xl sm:text-4xl mb-4 sm:mb-6 underline-partial'>
-              Get in touch
-            </p>
-            <a
-              href={`mailto:${email}`}
-              className='block text-xl sm:text-2xl mt-2 sm:mt-4'
-            >
-              {email}
-            </a>
-          </div>
-          <div className='flex flex-col'>
-            <p className='text-3xl sm:text-4xl mb-2 sm:mb-3 underline-partial'>
-              Follow us
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );

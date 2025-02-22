@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { StarIcon } from 'lucide-react';
+import Image from 'next/image';
 
 export default function HeroSection() {
   return (
@@ -49,9 +50,15 @@ export default function HeroSection() {
         <div className='relative w-full aspect-square lg:aspect-[4/3]'>
           <div className='absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-lg'>
             <div className='w-full h-full flex items-center justify-center'>
-              <div className='relative w-3/4 aspect-[3/4]'>
+            {/* w-3/4 aspect-[3/4] */}
+              <div className='relative w-full aspect-square lg:aspect-[4/3]'>
                 <div className='absolute inset-0 bg-white/90 dark:bg-gray-900/90 rounded-lg shadow-xl'>
-                  {/* Add your hero illustration or animation here */}
+                  <Image
+                    src='/hero-2.webp'
+                    alt='Hero'
+                    fill
+                    className='object-cover'
+                  />
                 </div>
               </div>
             </div>

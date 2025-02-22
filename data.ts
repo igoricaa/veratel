@@ -1,10 +1,10 @@
 import { Route } from '@/types';
 
 export const routes: Route[] = [
-  {
-    name: 'Home',
-    path: '/',
-  },
+  // {
+  //   name: 'Home',
+  //   path: '/',
+  // },
   {
     name: 'About',
     path: '/about',
@@ -13,22 +13,22 @@ export const routes: Route[] = [
     name: 'Features',
     path: '/features',
   },
-  {
-    name: 'Industry Expertise',
-    path: '/pricing',
-  },
+  // {
+  //   name: 'Industry Expertise',
+  //   path: '/industry-expertise',
+  // },
   {
     name: 'Pricing',
     path: '/pricing',
   },
-  {
-    name: 'Testimonials',
-    path: '/testimonials',
-  },
-  {
-    name: 'Contact',
-    path: '/contact',
-  },
+  // {
+  //   name: 'Testimonials',
+  //   path: '/testimonials',
+  // },
+  // {
+  //   name: 'Contact',
+  //   path: '/contact',
+  // },
 ];
 
 export const email = 'sales@veratel.io';

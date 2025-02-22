@@ -5,6 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 import {
   Zap,
   Code,
@@ -54,11 +55,15 @@ export default function FeaturesSection() {
           Your Reliable Partner for High-Quality Communications.
         </p>
       </div>
-      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+      <div className='grid md:grid-cols-6 lg:grid-cols-6 gap-8'>
         {features.map((feature, i) => (
           <Card
             key={i}
-            className='border-1 hover:border-[hsla(163,100%,41%,1)] transition-colors duration-200'
+            className={cn(
+              `border-1 hover:border-[hsla(163,100%,41%,1)] transition-colors duration-200 col-span-2`,
+              // i === 4 || i === 3 ? 'col-span-3' : 'col-span-2'
+              i === 3 && 'col-start-2'
+            )}
           >
             <CardHeader>
               <div className='p-2 w-fit rounded-lg bg-[hsla(163,100%,41%,1)] text-white mb-4'>

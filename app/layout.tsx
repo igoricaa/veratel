@@ -6,9 +6,9 @@ import Lenis from '@/components/lenis';
 import Footer from '@/components/footer';
 
 const dmSans = DM_Sans({
-  variable: '--font-dm-sans',
   weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
+  variable: '--font-dm-sans',
 });
 
 export const metadata: Metadata = {

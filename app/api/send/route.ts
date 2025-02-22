@@ -1,5 +1,5 @@
 import { EmailTemplate } from '@/components/email-template';
-import { rateLimit } from '@/utils/rate-limit';
+import { rateLimit } from '@/lib/rate-limit';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);

@@ -18,7 +18,10 @@ const Header = () => {
       <ul className='hidden lg:flex items-center gap-4 sm:gap-6 text-foreground font-medium text-lg sm:text-lg'>
         {routes.map((route: Route) => (
           <li key={route.name}>
-            <Link href={route.path} className='uppercase underline-link hover:text-primary transition-colors duration-300'>
+            <Link
+              href={route.path}
+              className='uppercase underline-link hover:text-primary transition-colors duration-300'
+            >
               {route.name}
             </Link>
           </li>
@@ -29,7 +32,7 @@ const Header = () => {
         Contact Us
       </Link>
 
-      <MobileMenu className='lg:hidden' />
+      {/* <MobileMenu className='lg:hidden' /> */}
     </header>
   );
 };

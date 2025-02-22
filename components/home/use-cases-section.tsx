@@ -30,12 +30,12 @@ const useCases = [
 export default function UseCasesSection() {
   return (
     <section className='bg-primary/0'>
-      <div className='container py-24'>
-        <div className='text-center mb-16'>
+      <div className='container py-14 md:py-24'>
+        <div className='text-center mb-10 md:mb-16'>
           <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
             Tailored Solutions for Your Needs
           </h2>
-          <p className='mt-4 text-lg text-muted-foreground'>
+          <p className='mt-4 text-lg text-muted-foreground max-w-2xl mx-auto'>
             Whether you're running a high-stakes marketing campaign or securing
             user accounts with SMS OTP, Veratel adapts to meet your
             communication goals.

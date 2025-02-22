@@ -46,9 +46,9 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section id='features' className='container py-24'>
-      <div className='text-center mb-16'>
-        <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
+    <section id='features' className='container py-14 md:py-24 mt-16 md:mt-0'>
+      <div className='md:text-center mb-10 md:mb-16'>
+        <h2 className='font-bold tracking-tighter text-3xl sm:text-4xl md:text-5xl'>
           What We Offer
         </h2>
         <p className='mt-4 text-lg text-muted-foreground'>
@@ -62,7 +62,7 @@ export default function FeaturesSection() {
             className={cn(
               `border-1 hover:border-[hsla(163,100%,41%,1)] transition-colors duration-200 col-span-2`,
               // i === 4 || i === 3 ? 'col-span-3' : 'col-span-2'
-              i === 3 && 'col-start-2'
+              // i === 3 && 'col-start-2'
             )}
           >
             <CardHeader>

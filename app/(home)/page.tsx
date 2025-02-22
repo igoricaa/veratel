@@ -14,6 +14,15 @@ export default function Home() {
       <main className='flex-1'>
         <HeroSection />
         <AboutSection />
+        <section className='bg-primary py-40'>
+          <div className='container'>
+            <h2 className='text-6xl text-center text-white'>
+              We don't just provide a service;
+              <br />
+              we provide peace of mind.
+            </h2>
+          </div>
+        </section>
         <FeaturesSection />
         <IndustrySection />
         <HowItWorks />

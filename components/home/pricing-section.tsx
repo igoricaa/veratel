@@ -6,8 +6,8 @@ import { features } from '@/data';
 export default function PricingSection() {
   return (
     <section className='bg-primary/0'>
-      <div className='container py-24'>
-        <div className='max-w-3xl mx-auto text-center mb-16'>
+      <div className='container py-14 md:py-24'>
+        <div className='max-w-3xl mx-auto text-center mb-10 md:mb-16'>
           <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
             Only pay for what you send
           </h2>

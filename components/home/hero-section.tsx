@@ -5,9 +5,10 @@ export default function HeroSection() {
   return (
     <section className='container flex flex-col lg:flex-row items-center gap-8 py-12 md:py-24'>
       <div className='flex flex-col gap-4 lg:w-1/2'>
-        <h1 className='text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none'>
-          Reach more, Convert more{' '}
-          <span className='text-primary'>Grow more</span> with less complexity
+        <h1 className='font-bold tracking-tighter text-4xl sm:text-5xl xl:text-6xl/none'>
+          <span className='text-primary'>Reach</span> more, Convert more,{' '}
+          <span className='text-primary'>Grow</span> more with{' '}
+          <span className='text-primary'>less</span> complexity
         </h1>
         <p className='text-lg text-muted-foreground'>
           CPaaS solutions for iGaming and online casinos —because delivery %

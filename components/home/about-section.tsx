@@ -5,9 +5,9 @@ export default function AboutSection() {
   return (
     <section className='relative'>
       <div className='absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent -z-10' />
-      <div className='container py-24'>
-        <div className='text-center max-w-3xl mx-auto mb-16'>
-          <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>
+      <div className='container py-14 md:py-24'>
+        <div className='md:text-center max-w-3xl mx-auto mb-16'>
+          <h2 className='font-bold tracking-tighter text-3xl sm:text-4xl md:text-5xl'>
             Why Choose Veratel?
           </h2>
           <Card className='mt-8'>

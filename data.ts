@@ -42,28 +42,6 @@ export const features: string[] = [
   'Flexible pricing for high-volume senders',
 ];
 
-export type Benefit = {
-  title: string;
-  description: string;
-};
-
-export const benefits: Benefit[] = [
-  {
-    title: 'Exceptional Quality',
-    description:
-      'Our carefully managed routes ensure that your messages are delivered with precision and reliability.',
-  },
-  {
-    title: 'Flexibility and Expertise',
-    description:
-      'Setting up compliant, high-performing SMS routing can be complex, but our diligent team works quickly to get you up and running.',
-  },
-  {
-    title: 'Value for Your Investment',
-    description:
-      'Our customers understand the importance of paying for quality, and we deliver exceptional results that justify your trust.',
-  },
-];
 
 export type Testimonial = {
   quote: string;
@@ -95,3 +73,11 @@ export const testimonials: Testimonial[] = [
     rating: 5,
   },
 ];
+
+
+export type FormFields = {
+  name: string;
+  email: string;
+  message: string;
+  recaptcha_token: string;
+};

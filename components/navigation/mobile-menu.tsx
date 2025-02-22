@@ -15,7 +15,7 @@ const MobileMenu = ({ className }: { className: string }) => {
   };
 
   const toggleScroll = () => {
-    document.body.style.overflow = menuOpen ? 'auto' : 'hidden';
+    // document.body.style.overflow = menuOpen ? 'auto' : 'hidden';
     document.body.toggleAttribute('data-lenis-prevent', !menuOpen);
   };
 

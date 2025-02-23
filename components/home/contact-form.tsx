@@ -94,7 +94,7 @@ export function ContactForm({ className }: { className?: string }) {
             value={captchaToken}
           />
         </div>
-        <div className='flex items-center gap-14 mt-8 md:mt-10'>
+        <div className='flex flex-col items-center gap-8 mt-8 md:mt-10'>
           <Button
             type='submit'
             className='w-full bg-[hsla(163,100%,41%,1)] hover:bg-[hsla(163,100%,41%,0.9)] text-white cursor-pointer h-12'

@@ -11,7 +11,6 @@ import { cn } from '@/lib/utils';
 declare const grecaptcha: any;
 const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
-
 export function ContactForm({ className }: { className?: string }) {
   const [captchaToken, setCaptchaToken] = useState('');
   const [state, formAction, pending] = useActionState(contactFormAction, {
@@ -120,7 +119,7 @@ export function ContactForm({ className }: { className?: string }) {
       </form>
       <Script
         id='recaptcha-load'
-        strategy='beforeInteractive'
+        strategy='lazyOnload'
         src={`https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`}
         onLoad={() => {
           grecaptcha.ready(function () {
@@ -130,9 +129,13 @@ export function ContactForm({ className }: { className?: string }) {
               })
               .then(function (token: string) {
                 setCaptchaToken(token);
+              })
+              .catch((error: any) => {
+                console.error('ReCAPTCHA Error:', error);
               });
           });
         }}
+        onError={(e) => console.error('Script failed to load', e)}
       />
     </>
   );

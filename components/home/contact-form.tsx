@@ -75,8 +75,8 @@ export function ContactForm({ className }: { className?: string }) {
               id='message'
               name='message'
               placeholder='Type your message here...'
-              rows={5}
-              className={`resize-none`}
+              rows={8}
+              className={`resize-none h-40`}
               aria-invalid={!!state.errors?.message}
               aria-errormessage='error-message'
               defaultValue={state.defaultValues.message}

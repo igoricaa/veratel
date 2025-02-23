@@ -21,7 +21,7 @@ export default function PricingSection() {
             <Image
               src='/veratel-pricing.webp'
               alt='Pricing illustration'
-              layout='fill'
+              fill
               objectFit='cover'
               className='rounded-lg shadow-lg'
             />

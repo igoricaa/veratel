@@ -20,8 +20,8 @@ export async function POST(req: any) {
     }
 
     const data = await resend.emails.send({
-      from: 'Kontakt forma <contact@warpstudio.rs>',
-      to: ['lazar@warpstudio.rs', 'stanisavljevic.igor4@gmail.com'],
+      from: 'Kontakt forma <contact@veratel.io>',
+      to: ['stanisavljevic.igor4@gmail.com'],
       subject: 'Kontakt forma',
       // replyTo: email,
       react: EmailTemplate(name, email, message),

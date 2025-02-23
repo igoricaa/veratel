@@ -53,7 +53,7 @@ const MobileMenu = ({ className }: { className: string }) => {
             </li>
           ))}
           <Link
-            href='/contact'
+            href='/#contact'
             className={cn(
               buttonVariants({ size: 'lg' }),
               'mt-4 sm:w-fit',

@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function CTASection() {
   return (
-    <section id='trial' className='container py-14 md:py-24'>
+    <section id='contact' className='container py-14 md:py-24'>
       <div className='space-y-6 md:space-y-0 md:grid grid-cols-3 gap-10'>
         <Card className='col-span-2 border-1'>
           <CardHeader className='text-center'>

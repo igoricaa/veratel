@@ -94,6 +94,7 @@ export default function IndustrySection() {
             src='/veratel-industry-gambling.webp'
             alt='Veratel iGaming and online casino industry'
             fill
+            sizes='620px'
             className='object-cover'
           />
         </div>

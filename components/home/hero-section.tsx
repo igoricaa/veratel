@@ -57,6 +57,7 @@ export default function HeroSection() {
                     src='/veratel-messaging-services.webp'
                     alt='Hero'
                     fill
+                    sizes='620px'
                     className='object-cover'
                   />
                 </div>

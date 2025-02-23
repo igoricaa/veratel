@@ -19,7 +19,7 @@ export default function PricingSection() {
         <div className='grid md:grid-cols-2 gap-8 items-start'>
           <div className='relative aspect-square w-full max-w-md mx-auto'>
             <Image
-              src='/placeholder.svg'
+              src='/veratel-pricing.webp'
               alt='Pricing illustration'
               layout='fill'
               objectFit='cover'

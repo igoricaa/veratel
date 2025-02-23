@@ -1,6 +1,8 @@
 import Link from 'next/link';
-import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import Logo from './ui/logo/logo';
+import TelegramIcon from './ui/icons/telegram-icon';
+import SkypeIcon from './ui/icons/skype-icon';
 
 export default function Footer() {
   return (
@@ -44,7 +46,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          {/* <div>
             <h3 className='font-semibold mb-4'>Legal</h3>
             <ul className='space-y-2'>
               <li>
@@ -64,33 +66,30 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div>
             <h3 className='font-semibold mb-4'>Connect</h3>
             <div className='flex gap-4'>
               <Link
-                href='#'
-                className='text-muted-foreground hover:text-primary'
+                href='mailto:info@veratel.io'
+                target='_blank'
+                className='flex gap-3 w-fit'
               >
-                <Facebook className='w-5 h-5' />
+                <Mail className='size-5 transition-colors duration-200 hover:text-primary' />
               </Link>
               <Link
-                href='#'
-                className='text-muted-foreground hover:text-primary'
+                href='https://t.me/veratel_io'
+                target='_blank'
+                className='flex gap-3 w-fit'
               >
-                <Twitter className='w-5 h-5' />
+                <TelegramIcon className='size-5 transition-colors duration-200 hover:fill-primary' />
               </Link>
               <Link
-                href='#'
-                className='text-muted-foreground hover:text-primary'
+                href='skype:veratel_io'
+                target='_blank'
+                className='flex gap-3 w-fit '
               >
-                <Linkedin className='w-5 h-5' />
-              </Link>
-              <Link
-                href='#'
-                className='text-muted-foreground hover:text-primary'
-              >
-                <Instagram className='w-5 h-5' />
+                <SkypeIcon className='size-5 transition-colors duration-200 hover:fill-primary' />
               </Link>
             </div>
           </div>

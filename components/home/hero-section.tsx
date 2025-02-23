@@ -54,7 +54,7 @@ export default function HeroSection() {
               <div className='relative w-full aspect-square lg:aspect-[4/3]'>
                 <div className='absolute inset-0 bg-white/90 dark:bg-gray-900/90 rounded-lg shadow-xl'>
                   <Image
-                    src='/hero-2.webp'
+                    src='/veratel-messaging-services.webp'
                     alt='Hero'
                     fill
                     className='object-cover'

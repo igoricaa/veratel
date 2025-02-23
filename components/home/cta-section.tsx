@@ -3,6 +3,7 @@ import { ContactForm } from './contact-form';
 import { Mail } from 'lucide-react';
 import TelegramIcon from '../ui/icons/telegram-icon';
 import SkypeIcon from '../ui/icons/skype-icon';
+import Link from 'next/link';
 
 export default function CTASection() {
   return (
@@ -23,7 +24,7 @@ export default function CTASection() {
         <div className='md:max-w-sm h-fit bg-primary rounded-lg px-side py-6 md:p-6 text-white'>
           <h3 className='text-2xl font-bold mb-6'>Contact Information</h3>
           <div className='space-y-4'>
-            <a
+            <Link
               href='mailto:info@veratel.io'
               target='_blank'
               className='flex gap-3 w-fit'
@@ -33,8 +34,8 @@ export default function CTASection() {
                 <p className='font-bold'>Email</p>
                 <p>info@veratel.io</p>
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               href='https://t.me/veratel_io'
               target='_blank'
               className='flex gap-3 w-fit'
@@ -44,8 +45,8 @@ export default function CTASection() {
                 <p className='font-bold'>Telegram</p>
                 <p>@veratel_io</p>
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               href='skype:veratel_io'
               target='_blank'
               className='flex gap-3 w-fit'
@@ -55,7 +56,7 @@ export default function CTASection() {
                 <p className='font-bold'>Skype</p>
                 <p>veratel_io</p>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -11,8 +11,6 @@ import { cn } from '@/lib/utils';
 declare const grecaptcha: any;
 const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
-const inputClasses =
-  'group-data-[invalid=true]/field:border-destructive focus-visible:group-data-[invalid=true]/field:ring-destructive bg-transparent border-b border-foreground pb-2 px-1 outline-none';
 
 export function ContactForm({ className }: { className?: string }) {
   const [captchaToken, setCaptchaToken] = useState('');

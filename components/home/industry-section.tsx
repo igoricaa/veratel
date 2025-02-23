@@ -91,7 +91,7 @@ export default function IndustrySection() {
         </div>
         <div className='relative'>
           <Image
-            src='/placeholder.svg'
+            src='/veratel-industry-gambling.webp'
             alt='Veratel iGaming and online casino industry'
             fill
             className='object-cover'

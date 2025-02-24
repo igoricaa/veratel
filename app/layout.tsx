@@ -18,10 +18,12 @@ export const metadata: Metadata = {
     default: 'Veratel',
     template: '%s | Veratel',
   },
-  description: 'Veratel',
+  description:
+    'CPaaS solutions for iGaming and online casinos —because delivery % matters.',
   openGraph: {
     title: 'Veratel',
-    description: 'Veratel turbo',
+    description:
+      'CPaaS solutions for iGaming and online casinos —because delivery % matters.',
     url: 'https://veratel.io',
     siteName: 'Veratel',
     locale: 'en_US',

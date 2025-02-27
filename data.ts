@@ -7,11 +7,11 @@ export const routes: Route[] = [
   // },
   {
     name: 'About',
-    path: '/about',
+    path: '/#about',
   },
   {
     name: 'Features',
-    path: '/features',
+    path: '/#features',
   },
   // {
   //   name: 'Industry Expertise',
@@ -19,7 +19,7 @@ export const routes: Route[] = [
   // },
   {
     name: 'Pricing',
-    path: '/pricing',
+    path: '/#pricing',
   },
   // {
   //   name: 'Testimonials',
